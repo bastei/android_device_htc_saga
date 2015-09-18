@@ -91,10 +91,6 @@ PRODUCT_PACKAGES += \
 	lights.saga \
 	sensors.saga
 
-# Override /proc/sys/vm/dirty_ratio on UMS
-PRODUCT_PROPERTY_OVERRIDES += \
-	ro.vold.umsdirtyratio=20
-
 # Use ART small mode
 # http://source.android.com/devices/tech/dalvik/configure.html#with_art_small_mode
 PRODUCT_PROPERTY_OVERRIDES += \
