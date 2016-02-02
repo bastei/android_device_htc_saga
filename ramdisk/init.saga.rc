@@ -109,6 +109,9 @@ on boot
     chmod 0660          /sys/class/leds/flashlight/brightness
     chown system system /sys/class/leds/lcd-backlight/brightness
 
+    # Lower LCD backlight to save juice
+    write /sys/class/leds/lcd-backlight/brightness 1
+
     # HTC Camera switch
     chown system camera /sys/android_camera2/htcwc
     chmod 0660          /sys/android_camera2/htcwc
