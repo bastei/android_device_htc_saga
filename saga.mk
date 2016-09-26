@@ -91,12 +91,6 @@ PRODUCT_PACKAGES += \
 	lights.saga \
 	sensors.saga
 
-# Use ART small mode
-# http://source.android.com/devices/tech/dalvik/configure.html#with_art_small_mode
-PRODUCT_PROPERTY_OVERRIDES += \
-	dalvik.vm.dex2oat-filter=interpret-only \
-	dalvik.vm.image-dex2oat-filter=speed
-
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := hdpi
