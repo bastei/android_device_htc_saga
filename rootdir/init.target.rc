@@ -1,13 +1,10 @@
-on init
-    mkdir /mnt/shell/emulated 0700 shell shell
-    mkdir /storage/emulated 0555 root root
+on fs
+    setprop ro.crypto.fuse_sdcard true
 
+on post-fs
     # Support legacy paths
     symlink /sdcard /mnt/sdcard
     symlink /sdcard /storage/sdcard0
-
-on fs
-    setprop ro.crypto.fuse_sdcard true
 
 on boot
     # HTC Camera switch

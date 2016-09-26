@@ -27,3 +27,7 @@ PRODUCT_DEVICE := saga
 PRODUCT_BRAND := htc_wwe
 PRODUCT_MANUFACTURER := HTC
 PRODUCT_MODEL := Desire S
+
+# By default, primary storage is physical
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.vold.primary_physical=1
