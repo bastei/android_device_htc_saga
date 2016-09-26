@@ -102,10 +102,3 @@ ADDITIONAL_DEFAULT_PROPERTIES += \
 	ro.adb.secure=0 \
 	ro.secure=0
 endif
-
-# Discard inherited values and use our own instead.
-PRODUCT_DEVICE := saga
-PRODUCT_NAME := saga
-PRODUCT_BRAND := htc_wwe
-PRODUCT_MODEL := Desire S
-PRODUCT_MANUFACTURER := HTC

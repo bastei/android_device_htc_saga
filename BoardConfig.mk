@@ -70,22 +70,6 @@ BOARD_HAVE_HTC_FFC := true
 BOARD_USE_REVERSE_FFC := true
 USE_CAMERA_STUB := true
 
-# RIL
-BOARD_USE_NEW_LIBRIL_HTC := true
-
-# No SDK blobs
-BUILD_EMULATOR_SENSORS_MODULE := false
-BUILD_EMULATOR_GPS_MODULE := false
-
-ifeq ($(USE_DEXPREOPT),true)
-    # Enable dex-preoptimization to speed up first boot sequence
-    ifeq ($(HOST_OS),linux)
-        ifeq ($(WITH_DEXPREOPT),)
-            WITH_DEXPREOPT := true
-        endif
-    endif
-endif
-
 # TWRP
 TW_THEME := portrait_mdpi
 TW_FLASH_FROM_STORAGE := true
