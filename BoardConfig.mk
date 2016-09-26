@@ -70,6 +70,10 @@ BOARD_HAVE_HTC_FFC := true
 BOARD_USE_REVERSE_FFC := true
 USE_CAMERA_STUB := true
 
+# Use minimal font packages
+SMALLER_FONT_FOOTPRINT := true
+MINIMAL_FONT_FOOTPRINT := true
+
 # TWRP
 TW_THEME := portrait_mdpi
 TW_FLASH_FROM_STORAGE := true

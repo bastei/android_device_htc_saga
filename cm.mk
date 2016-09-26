@@ -2,7 +2,7 @@
 $(call inherit-product, device/htc/saga/full_saga.mk)
 
 # Inherit common CM configuration
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+$(call inherit-product, vendor/cm/config/common_mini_phone.mk)
 
 # Set build fingerprint / ID / Product Name ect.
 PRODUCT_BUILD_PROP_OVERRIDES += \
